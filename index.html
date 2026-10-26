@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no">
+  <title>¡Feliz cumpleaños, Maricielo! ✦</title>
+  <meta name="description" content="Una sorpresa grabada en casete para Maricielo. Pon un casete, sube el volumen y disfruta.">
+  <meta name="theme-color" content="#07080d">
+  <meta property="og:title" content="¡Feliz cumpleaños, Maricielo! ✦">
+  <meta property="og:description" content="Una sorpresa grabada en casete. Pon un casete y dale play.">
+  <meta property="og:image" content="assets/media/foto-juntos.jpg">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📼</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=VT323&family=Caveat:wght@500;700&family=Courier+Prime:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ====================================================================
+     ESCENA
+     ==================================================================== -->
+<div id="viewport">
+  <div id="stage" class="is-dark">
+
+    <!-- Capa media: pared, ventana, decoración -->
+    <div class="layer" data-depth="0.35" id="layerMid">
+      <div class="wall"></div>
+      <div class="desk-shadow"></div>
+
+      <div class="window" id="window">
+        <canvas id="sky" aria-label="Cielo nocturno con fuegos artificiales"></canvas>
+        <div class="glass"></div>
+        <div class="mull-v"><i class="handle"></i></div>
+        <div class="mull-h"></div>
+        <div class="frame"></div>
+        <div class="fw-flash" id="fwFlash"></div>
+      </div>
+      <div class="sill"></div>
+
+      <div class="rod"><i></i><i></i></div>
+      <div class="curtain left"><i class="tie"></i></div>
+      <div class="curtain right"><i class="tie"></i></div>
+
+      <div class="bunting" id="bunting"></div>
+      <div class="fairy" id="fairy"></div>
+
+      <figure class="polaroid obj" id="pol0" data-photo="0" data-tip="Recuerdo · ver foto" style="--r:-6deg; left:68px; top:96px; width:218px; height:262px;">
+        <i class="tape"></i>
+        <div class="pic"><img src="assets/media/foto-cerro.jpg" alt="Foto en el cerro" loading="eager"></div>
+        <figcaption></figcaption>
+      </figure>
+      <figure class="polaroid obj" id="pol1" data-photo="1" data-tip="Recuerdo · ver foto" style="--r:5deg; left:116px; top:374px; width:206px; height:250px;">
+        <i class="tape"></i>
+        <div class="pic"><img src="assets/media/foto-juntos.jpg" alt="Foto juntos" loading="eager"></div>
+        <figcaption></figcaption>
+      </figure>
+
+      <figure class="polaroid obj" id="pol2" data-photo="2" data-tip="Recuerdo · ver foto" style="--r:-4deg; left:1320px; top:44px; width:194px; height:206px;">
+        <i class="tape"></i>
+        <div class="pic"><img src="assets/media/foto-nina-1.jpg" alt="Foto de niña" loading="eager"></div>
+        <figcaption></figcaption>
+      </figure>
+      <figure class="polaroid obj" id="pol3" data-photo="3" data-tip="Recuerdo · ver foto" style="--r:4deg; left:1336px; top:262px; width:194px; height:206px;">
+        <i class="tape"></i>
+        <div class="pic"><img src="assets/media/foto-nina-2.jpg" alt="Foto de niña en tina" loading="eager"></div>
+        <figcaption></figcaption>
+      </figure>
+
+      <div class="calendar obj" id="calendar" data-tip="Calendario"></div>
+
+      <div class="balloons" id="balloons" aria-hidden="true">
+        <svg viewBox="0 0 170 470" width="170" height="470">
+          <defs>
+            <radialGradient id="bPink" cx=".35" cy=".3" r=".75"><stop offset="0" stop-color="#ffd0df"/><stop offset=".35" stop-color="#ff7aa8"/><stop offset="1" stop-color="#b8326a"/></radialGradient>
+            <radialGradient id="bGold" cx=".35" cy=".3" r=".75"><stop offset="0" stop-color="#fff2c4"/><stop offset=".35" stop-color="#f5c451"/><stop offset="1" stop-color="#a87412"/></radialGradient>
+            <radialGradient id="bLila" cx=".35" cy=".3" r=".75"><stop offset="0" stop-color="#ece2ff"/><stop offset=".35" stop-color="#b79cff"/><stop offset="1" stop-color="#5d3fb0"/></radialGradient>
+            <linearGradient id="bStar" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff6d0"/><stop offset=".5" stop-color="#e9b949"/><stop offset="1" stop-color="#fff0b0"/></linearGradient>
+          </defs>
+          <g class="bl b1"><path d="M48 150 C 52 250, 30 330, 70 470" stroke="#e8dccb" stroke-width="1" fill="none" opacity=".6"/><ellipse cx="48" cy="96" rx="40" ry="50" fill="url(#bPink)"/><path d="M44 144 l4 8 l4 -8 z" fill="#b8326a"/></g>
+          <g class="bl b2"><path d="M118 110 C 112 230, 130 330, 78 470" stroke="#e8dccb" stroke-width="1" fill="none" opacity=".6"/><ellipse cx="118" cy="58" rx="38" ry="48" fill="url(#bGold)"/><path d="M114 104 l4 8 l4 -8 z" fill="#a87412"/></g>
+          <g class="bl b3"><path d="M96 228 C 100 300, 70 380, 74 470" stroke="#e8dccb" stroke-width="1" fill="none" opacity=".6"/><ellipse cx="96" cy="176" rx="36" ry="46" fill="url(#bLila)"/><path d="M92 220 l4 8 l4 -8 z" fill="#5d3fb0"/></g>
+          <g class="bl b4"><path d="M30 270 C 40 340, 60 400, 72 470" stroke="#e8dccb" stroke-width="1" fill="none" opacity=".6"/><path d="M30 214 l10 22 24 3 -18 16 5 24 -21 -12 -21 12 5 -24 -18 -16 24 -3z" fill="url(#bStar)" stroke="#c99a2e" stroke-width="1"/></g>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Capa cercana: escritorio y objetos -->
+    <div class="layer" data-depth="1" id="layerNear">
+      <div class="desk">
+        <div class="desk-top"></div>
+        <div class="desk-front"></div>
+      </div>
+      <div class="floor"></div>
+      <div class="desk-pool"></div>
+
+      <!-- Lámpara -->
+      <div class="lamp obj" id="lamp" data-tip="Lámpara · encender / apagar">
+        <svg viewBox="0 0 220 300" width="220" height="300">
+          <defs>
+            <linearGradient id="lShade" x1="0" x2="1"><stop offset="0" stop-color="#8f3328"/><stop offset=".45" stop-color="#d0644f"/><stop offset="1" stop-color="#7a2a20"/></linearGradient>
+            <linearGradient id="lBase" x1="0" x2="1"><stop offset="0" stop-color="#7a2a20"/><stop offset=".5" stop-color="#c75a48"/><stop offset="1" stop-color="#6a241b"/></linearGradient>
+            <linearGradient id="lBrass" x1="0" x2="1"><stop offset="0" stop-color="#8c6a35"/><stop offset=".5" stop-color="#e2c27e"/><stop offset="1" stop-color="#7a5a2a"/></linearGradient>
+            <radialGradient id="lBulb" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fffbe8"/><stop offset=".5" stop-color="#ffe2a8"/><stop offset="1" stop-color="#ffb25e" stop-opacity="0"/></radialGradient>
+          </defs>
+          <ellipse cx="62" cy="288" rx="52" ry="11" fill="rgba(0,0,0,.45)"/>
+          <ellipse cx="62" cy="282" rx="50" ry="12" fill="url(#lBase)"/>
+          <ellipse cx="62" cy="278" rx="44" ry="9" fill="#d36b57" opacity=".8"/>
+          <path d="M62 276 C 52 200, 62 128, 132 78" stroke="url(#lBrass)" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <circle cx="132" cy="78" r="6" fill="url(#lBrass)"/>
+          <g transform="rotate(24 150 72)">
+            <ellipse class="bulb-glow" cx="150" cy="118" rx="70" ry="22" fill="url(#lBulb)"/>
+            <path d="M126 36 L174 36 L214 112 L86 112 Z" fill="url(#lShade)"/>
+            <ellipse cx="150" cy="36" rx="24" ry="6" fill="#a8483a"/>
+            <ellipse cx="150" cy="112" rx="64" ry="12" fill="#5c1d16"/>
+            <ellipse class="bulb" cx="150" cy="110" rx="52" ry="8" fill="#fff1c9"/>
+          </g>
+        </svg>
+      </div>
+      <div class="lamp-cone" id="lampCone"></div>
+
+      <!-- Regalo -->
+      <div class="gift obj hint" id="gift" data-tip="Un regalito · ábrelo">
+        <div class="gift-lid"><i class="bow l"></i><i class="bow r"></i><i class="knot"></i></div>
+        <div class="gift-box"><i class="rib-v"></i><i class="tag">Para Mari ♥</i></div>
+      </div>
+
+      <!-- Pastel -->
+      <div class="cake obj hint" id="cake" data-tip="Pastel · pide un deseo">
+        <svg viewBox="0 0 210 210" width="210" height="210" aria-hidden="true">
+          <defs>
+            <linearGradient id="cPink" x1="0" x2="1"><stop offset="0" stop-color="#d9628a"/><stop offset=".35" stop-color="#f7a3bf"/><stop offset=".7" stop-color="#f08db0"/><stop offset="1" stop-color="#c24f78"/></linearGradient>
+            <linearGradient id="cCream" x1="0" x2="1"><stop offset="0" stop-color="#e6c9a3"/><stop offset=".4" stop-color="#fff2de"/><stop offset="1" stop-color="#d4b38a"/></linearGradient>
+            <linearGradient id="cPlate" x1="0" x2="1"><stop offset="0" stop-color="#bdb6ac"/><stop offset=".5" stop-color="#f6f2ea"/><stop offset="1" stop-color="#aaa298"/></linearGradient>
+          </defs>
+          <ellipse cx="105" cy="200" rx="104" ry="10" fill="rgba(0,0,0,.45)"/>
+          <ellipse cx="105" cy="194" rx="100" ry="13" fill="url(#cPlate)"/>
+          <rect x="20" y="118" width="170" height="74" rx="10" fill="url(#cPink)"/>
+          <ellipse cx="105" cy="118" rx="85" ry="14" fill="#ffc6d8"/>
+          <path d="M20 120 Q20 132 26 132 Q32 132 32 124 Q34 146 42 146 Q50 146 50 128 Q54 136 60 136 Q66 136 68 124 Q72 152 82 152 Q92 152 92 128 Q96 138 104 138 Q112 138 114 126 Q118 148 128 148 Q138 148 140 128 Q144 136 150 136 Q158 136 160 124 Q164 144 172 144 Q180 144 182 126 Q186 134 190 128 L190 118 Q105 96 20 118 Z" fill="#fff6ee"/>
+          <text x="105" y="176" text-anchor="middle" font-family="Caveat, cursive" font-size="30" font-weight="700" fill="#fff" opacity=".95">Feliz día</text>
+          <rect x="52" y="70" width="106" height="52" rx="8" fill="url(#cCream)"/>
+          <ellipse cx="105" cy="70" rx="53" ry="10" fill="#fff8ec"/>
+          <path d="M52 72 Q52 82 57 82 Q62 82 62 76 Q64 92 71 92 Q78 92 78 78 Q82 86 88 86 Q94 86 96 76 Q100 96 108 96 Q116 96 117 78 Q120 86 126 86 Q132 86 134 76 Q138 92 145 92 Q152 92 153 76 Q156 82 158 78 L158 70 Q105 54 52 70 Z" fill="#f491b3"/>
+          <g class="sprinkles">
+            <rect x="34" y="160" width="6" height="2" rx="1" fill="#ffd166" transform="rotate(30 34 160)"/>
+            <rect x="170" y="166" width="6" height="2" rx="1" fill="#7fe0d2" transform="rotate(-20 170 166)"/>
+            <rect x="60" y="182" width="6" height="2" rx="1" fill="#b79cff" transform="rotate(60 60 182)"/>
+            <rect x="150" y="182" width="6" height="2" rx="1" fill="#ffffff" transform="rotate(10 150 182)"/>
+            <rect x="70" y="110" width="5" height="2" rx="1" fill="#7fe0d2" transform="rotate(20 70 110)"/>
+            <rect x="140" y="108" width="5" height="2" rx="1" fill="#ffd166" transform="rotate(-40 140 108)"/>
+            <rect x="100" y="112" width="5" height="2" rx="1" fill="#ff7aa8" transform="rotate(70 100 112)"/>
+            <circle cx="40" cy="128" r="4.5" fill="#d7263d"/><circle cx="170" cy="128" r="4.5" fill="#d7263d"/>
+            <circle cx="105" cy="132" r="4.5" fill="#d7263d"/>
+          </g>
+        </svg>
+        <div class="candles" id="candles"></div>
+      </div>
+
+      <!-- TV -->
+      <div class="tv obj hint" id="tv" data-tip="Tele · cambia de canal">
+        <div class="antenna"><i class="a1"></i><i class="a2"></i><b></b></div>
+        <div class="tv-body">
+          <div class="tv-brand">MARICIELO</div>
+          <div class="tv-model">Cielovisión</div>
+          <div class="tv-bezel">
+            <div class="tv-screen" id="tvScreen">
+              <div class="ch ch-title" data-ch="title">
+                <div class="tt-top"><span>▶ PLAY</span><span>CH 26 ✦</span></div>
+                <div class="tt-name"><span>FELIZ CUMPLE,</span><b>MARICIELO</b></div>
+                <div class="tt-sub">26.10 · EDICIÓN ESPECIAL</div>
+                <svg class="tt-orbit" viewBox="0 0 200 80"><ellipse cx="100" cy="40" rx="94" ry="20" transform="rotate(-8 100 40)" fill="none" stroke="currentColor" stroke-dasharray="1.5 3"/><circle r="2.5" fill="currentColor"><animateMotion dur="7s" repeatCount="indefinite" path="M6,40 a94,20 0 1,0 188,0 a94,20 0 1,0 -188,0"/></circle></svg>
+                <div class="tt-hint"><span>ELIGE UN CASETE ▸ SOPLA LAS VELAS ▸ TOCA LA VENTANA ▸ ABRE LA CARTA ▸&nbsp;</span><span>ELIGE UN CASETE ▸ SOPLA LAS VELAS ▸ TOCA LA VENTANA ▸ ABRE LA CARTA ▸&nbsp;</span></div>
+              </div>
+              <div class="ch ch-video" data-ch="video">
+                <img class="vid-bg" src="assets/media/video-poster.jpg" alt="">
+                <video id="tvVideo" playsinline preload="metadata" poster="assets/media/video-poster.jpg" src="assets/media/video-casero.mp4"></video>
+                <div class="vid-play" id="vidPlay">▶</div>
+              </div>
+              <div class="ch ch-photos" data-ch="photos">
+                <div class="slides" id="tvSlides"></div>
+                <div class="vhs-stamp"><span>▶ PLAY</span><span id="vhsDate">OCT.26 2026</span></div>
+              </div>
+              <div class="ch ch-news" data-ch="news">
+                <div class="tx-head"><span class="tx-p">P261</span><span>CIELOTEXT</span><span id="txClock">09:00</span></div>
+                <div class="tx-band">NOTICIAS DE HOY</div>
+                <div class="tx-big" id="txBig"></div>
+                <div class="tx-ticker"><span id="txTicker"></span></div>
+              </div>
+              <div class="ch ch-music" data-ch="music">
+                <div class="mu-top"><span id="muState">▶ TAPE</span><span id="muSide">A1</span></div>
+                <div class="mu-title" id="muTitle">—</div>
+                <div class="mu-artist" id="muArtist">—</div>
+                <canvas class="mu-viz" id="tvViz" width="400" height="110"></canvas>
+                <div class="mu-bar"><i id="muProg"></i></div>
+                <div class="mu-time"><span id="muCur">00:00</span><span id="muDur">--:--</span></div>
+              </div>
+              <div class="ch ch-msg" data-ch="msg">
+                <div class="msg-in"><small id="msgK">CH 26</small><b id="msgT">¡HOLA!</b><span id="msgS"></span></div>
+              </div>
+              <canvas class="tv-static" id="tvStatic" width="160" height="120"></canvas>
+              <div class="tv-osd" id="tvOsd">CH 26</div>
+              <div class="tv-scan"></div>
+              <div class="tv-glare"></div>
+              <div class="tv-off"></div>
+            </div>
+          </div>
+          <div class="tv-panel">
+            <button class="tv-btn" data-tv="down" aria-label="Canal anterior">◂</button>
+            <button class="tv-btn" data-tv="up" aria-label="Canal siguiente">▸</button>
+            <span class="tv-grill"></span>
+            <span class="tv-knob"></span><span class="tv-knob small"></span>
+            <i class="tv-led"></i>
+          </div>
+        </div>
+        <i class="tv-note">CH ▸ para<br>cambiar ♥</i>
+      </div>
+
+      <!-- Casetera -->
+      <div class="deck obj hint" id="deck" data-tip="Casetera">
+        <div class="deck-top"></div>
+        <div class="deck-face">
+          <div class="deck-brand"><b>MARICIELO</b> HI-FI <span>STEREO CASSETTE DECK · DOLBY ♥ NR</span></div>
+          <div class="deck-door" id="deckDoor">
+            <div class="door-slot"><div class="deck-tape" id="deckTape"></div></div>
+            <div class="door-glass"></div>
+            <span class="door-lbl">AUTO REVERSE</span>
+          </div>
+          <div class="deck-mid">
+            <div class="deck-display">
+              <div class="dd-row"><span id="dispState">NO TAPE</span><span id="dispCounter">000</span></div>
+              <div class="dd-marquee"><span id="dispTitle">INSERTA UN CASETE ♥</span></div>
+            </div>
+            <div class="deck-keys">
+              <button class="dk" data-key="prev" aria-label="Retroceder">◀◀</button>
+              <button class="dk play" data-key="play" aria-label="Reproducir o pausar">▶</button>
+              <button class="dk" data-key="next" aria-label="Avanzar">▶▶</button>
+              <button class="dk" data-key="stop" aria-label="Detener">■</button>
+              <button class="dk eject" data-key="eject" aria-label="Expulsar">⏏</button>
+            </div>
+          </div>
+          <div class="deck-right">
+            <div class="vu"><div class="vu-face"><i class="vu-scale"></i><i class="needle" id="needleL"></i><em>VU</em></div><small>L</small></div>
+            <div class="vu"><div class="vu-face"><i class="vu-scale"></i><i class="needle" id="needleR"></i><em>VU</em></div><small>R</small></div>
+            <div class="deck-power"><i class="pled" id="pled"></i><span>POWER</span></div>
+          </div>
+        </div>
+        <i class="deck-foot l"></i><i class="deck-foot r"></i>
+        <i class="sticky">¡Pon un<br>casete! ♥</i>
+      </div>
+
+      <!-- Casetes -->
+      <div class="stack" id="stack"></div>
+
+      <!-- Control remoto (decorativo) -->
+      <div class="remote" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i class="red"></i></div>
+
+      <!-- Carta -->
+      <div class="envelope obj hint" id="envelope" data-tip="Una carta para ti">
+        <div class="env-back"></div>
+        <div class="env-flap"></div>
+        <div class="env-seal">♥</div>
+        <span class="env-to">Para: Maricielo</span>
+      </div>
+
+      <div class="fly-layer" id="flyLayer"></div>
+    </div>
+
+    <div class="room-light"></div>
+    <div class="room-flash" id="roomFlash"></div>
+  </div>
+</div>
+
+<canvas id="confetti"></canvas>
+<div class="vignette"></div>
+<div class="grain"></div>
+
+<!-- ====================================================================
+     HUD
+     ==================================================================== -->
+<header class="hud" id="hud">
+  <div class="hud-brand"><b>MARICIELO</b><span>26 · 10</span></div>
+  <div class="mini" id="mini" hidden>
+    <div class="mini-tape"><i></i><i></i></div>
+    <div class="mini-txt"><b id="miniTitle">—</b><span id="miniArtist">—</span></div>
+    <button class="mini-btn" id="miniPlay" aria-label="Reproducir o pausar">❚❚</button>
+    <button class="mini-btn" id="miniNext" aria-label="Siguiente casete">▶▶</button>
+  </div>
+  <div class="hud-ctl">
+    <button id="btnLamp" title="Luz" aria-label="Encender o apagar la lámpara">💡</button>
+    <button id="btnSound" title="Sonido" aria-label="Silenciar">🔊</button>
+    <button id="btnFull" title="Pantalla completa" aria-label="Pantalla completa">⛶</button>
+  </div>
+</header>
+
+<nav class="dock" id="dock" aria-label="Lugares del cuarto">
+  <button data-shot="room" class="on"><span>🏠</span><em>Cuarto</em></button>
+  <button data-shot="music"><span>📼</span><em>Casetes</em></button>
+  <button data-shot="tv"><span>📺</span><em>Tele</em></button>
+  <button data-shot="cake"><span>🎂</span><em>Pastel</em></button>
+  <button data-shot="photos"><span>📷</span><em>Fotos</em></button>
+  <button data-open="letter"><span>✉️</span><em>Carta</em></button>
+  <button data-open="gift"><span>🎁</span><em>Regalo</em></button>
+</nav>
+
+<div class="tooltip" id="tooltip"></div>
+<div class="toast" id="toast"></div>
+
+<!-- Panel del pastel -->
+<div class="sheet" id="cakeSheet" aria-live="polite">
+  <div class="sheet-a" id="sheetWish">
+    <p class="sheet-k">🎂 Pide un deseo…</p>
+    <p class="sheet-t">Cierra los ojos, piensa en algo bonito y sopla las velas.</p>
+    <div class="sheet-actions">
+      <button id="blowMic" class="btn">🎤 Soplar al micrófono</button>
+      <button id="blowTap" class="btn ghost">🌬️ Soplar</button>
+    </div>
+    <p class="sheet-s" id="micState">También puedes tocar cada vela.</p>
+  </div>
+  <div class="sheet-a" id="sheetDone" hidden>
+    <p class="sheet-k">✨ ¡Deseo enviado al cielo! ✨</p>
+    <p class="sheet-t">Mira por la ventana… 🎆</p>
+    <div class="sheet-actions"><button id="relight" class="btn ghost">🕯️ Volver a encender</button></div>
+  </div>
+</div>
+
+<!-- Carta -->
+<div class="modal" id="letterModal" hidden>
+  <div class="modal-bg" data-close></div>
+  <div class="letter-wrap">
+    <div class="letter-env"><div class="le-flap"></div><div class="le-front"></div></div>
+    <article class="paper" id="paper">
+      <div class="paper-stamp">26·10<br><small>✦ 2026 ✦</small></div>
+      <div class="paper-body" id="paperBody"></div>
+      <div class="paper-sign" id="paperSign"></div>
+      <div class="paper-doodle">♥ ✿ ♥</div>
+    </article>
+  </div>
+  <button class="modal-x" data-close aria-label="Cerrar">✕</button>
+</div>
+
+<!-- Fotos -->
+<div class="modal" id="photoModal" hidden>
+  <div class="modal-bg" data-close></div>
+  <div class="lb">
+    <button class="lb-nav prev" id="lbPrev" aria-label="Anterior">‹</button>
+    <figure class="lb-card" id="lbCard">
+      <div class="lb-media" id="lbMedia"></div>
+      <figcaption><b id="lbCap"></b><span id="lbNote"></span></figcaption>
+    </figure>
+    <button class="lb-nav next" id="lbNext" aria-label="Siguiente">›</button>
+    <div class="lb-dots" id="lbDots"></div>
+  </div>
+  <button class="modal-x" data-close aria-label="Cerrar">✕</button>
+</div>
+
+<!-- Regalo -->
+<div class="modal" id="giftModal" hidden>
+  <div class="modal-bg" data-close></div>
+  <div class="ticket" id="ticket">
+    <div class="tk-main">
+      <p class="tk-k" id="tkK"></p>
+      <h2 class="tk-t" id="tkT"></h2>
+      <ul class="tk-l" id="tkL"></ul>
+      <p class="tk-f">Firmado y sellado: <b>Bryan</b> ✍️</p>
+    </div>
+    <div class="tk-stub"><span>ADMIT ONE</span><b>♥</b><span>Nº 026</span></div>
+  </div>
+  <button class="modal-x" data-close aria-label="Cerrar">✕</button>
+</div>
+
+<!-- ====================================================================
+     INTRO
+     ==================================================================== -->
+<div id="intro">
+  <div class="intro-bokeh" aria-hidden="true"></div>
+  <div class="intro-inner">
+    <p class="intro-k">UNA CINTA GRABADA ESPECIALMENTE PARA</p>
+    <h1 class="intro-name">Maricielo</h1>
+    <div class="intro-tape" id="introTape"></div>
+    <button id="startBtn" class="intro-play"><span>▶</span> PLAY</button>
+    <p class="intro-hint">🔊 Sube el volumen · mejor con audífonos</p>
+  </div>
+  <div class="intro-crt"></div>
+</div>
+
+<noscript><div class="noscript">Esta sorpresa necesita JavaScript activado ♥</div></noscript>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
